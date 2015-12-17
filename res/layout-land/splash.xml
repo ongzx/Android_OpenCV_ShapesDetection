@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/splash_bg"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:nestedScrollingEnabled="false"
+        android:src="@drawable/splash_bg"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/logo"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/logo"
+        android:textAlignment="center"
+        android:scaleType="fitCenter"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Scan shapes to create actions"
+        android:id="@+id/textView2"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:layout_below="@+id/logo"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:id="@+id/start"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:textColor="#f44336"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:background="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/shapes"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/start"
+        android:layout_centerInParent="true"
+        android:padding="30dp" />
+
+</RelativeLayout>

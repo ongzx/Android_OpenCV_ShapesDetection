@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:background="#eee4c1"
+    android:gravity="center_vertical"
+    tools:context=".SavedActions">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_weight="0.9"
+        android:layout_height="0dip"
+        android:background="#eee4c1"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Actions Detected"
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tap and hold to rearrange the action sequence"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <org.opencv.samples.tutorial1.DynamicListView
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:divider="#00000000"
+            android:id="@+id/listView"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0">
+
+            <Button
+                android:layout_width="213dp"
+                android:layout_height="50dp"
+                android:text="Play Actions"
+                android:id="@+id/play"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:textColor="#f24535"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:text="Clear"
+                android:id="@+id/clear"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff"
+                android:textColor="#f24535"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Back"
+                android:id="@+id/back"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#ffffff"
+                android:textColor="#f24535"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
